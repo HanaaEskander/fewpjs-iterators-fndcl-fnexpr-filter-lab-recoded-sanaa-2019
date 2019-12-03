@@ -1,10 +1,10 @@
 // Code your solution here
-function findMatching(drivers, qoute) {
-    return drivers.filter(data => data.toLowerCase() === qoute.toLowerCase());
+function findMatching(drivers, string) {
+    return drivers.filter(data => data.toLowerCase() === string.toLowerCase());
 }
-function fuzzyMatch(drivers, qoute) {
-    return drivers.filter(data => data.startsWith(qoute));
+function fuzzyMatch(drivers, string) {
+    return drivers.filter(data => data.startsWith(string));
 }
-function matchName(drivers, qoute) {
-    return drivers.filter(data => data.name === qoute);
+function matchName(drivers, string) {
+    return drivers.filter(data => data.name === string);
 }
